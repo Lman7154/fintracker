@@ -569,3 +569,9 @@ def load_goals():
 
 def save_goals(goals_df):
     goals_df.to_csv('financial_goals.csv', index=False)
+    
+    
+if __name__ == "__main__":
+    import os
+    from streamlit.web import cli as stcli
+    os.system("streamlit run app.py")
